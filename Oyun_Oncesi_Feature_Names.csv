@@ -1,0 +1,263 @@
+,Feature_Name
+0,radiant_Abaddon
+1,radiant_Alchemist
+2,radiant_Ancient Apparition
+3,radiant_Anti-Mage
+4,radiant_Axe
+5,radiant_Bane
+6,radiant_Batrider
+7,radiant_Beastmaster
+8,radiant_Bloodseeker
+9,radiant_Bounty Hunter
+10,radiant_Brewmaster
+11,radiant_Bristleback
+12,radiant_Broodmother
+13,radiant_Centaur Warrunner
+14,radiant_Chaos Knight
+15,radiant_Chen
+16,radiant_Clinkz
+17,radiant_Clockwerk
+18,radiant_Crystal Maiden
+19,radiant_Dark Seer
+20,radiant_Dazzle
+21,radiant_Death Prophet
+22,radiant_Disruptor
+23,radiant_Doom
+24,radiant_Dragon Knight
+25,radiant_Drow Ranger
+26,radiant_Earth Spirit
+27,radiant_Earthshaker
+28,radiant_Elder Titan
+29,radiant_Ember Spirit
+30,radiant_Enchantress
+31,radiant_Enigma
+32,radiant_Faceless Void
+33,radiant_Gyrocopter
+34,radiant_Huskar
+35,radiant_Invoker
+36,radiant_Io
+37,radiant_Jakiro
+38,radiant_Juggernaut
+39,radiant_Keeper of the Light
+40,radiant_Kunkka
+41,radiant_Legion Commander
+42,radiant_Leshrac
+43,radiant_Lich
+44,radiant_Lifestealer
+45,radiant_Lina
+46,radiant_Lion
+47,radiant_Lone Druid
+48,radiant_Luna
+49,radiant_Lycan
+50,radiant_Magnus
+51,radiant_Medusa
+52,radiant_Meepo
+53,radiant_Mirana
+54,radiant_Morphling
+55,radiant_Naga Siren
+56,radiant_Nature's Prophet
+57,radiant_Necrophos
+58,radiant_Night Stalker
+59,radiant_Nyx Assassin
+60,radiant_Ogre Magi
+61,radiant_Omniknight
+62,radiant_Oracle
+63,radiant_Outworld Devourer
+64,radiant_Phantom Assassin
+65,radiant_Phantom Lancer
+66,radiant_Phoenix
+67,radiant_Puck
+68,radiant_Pudge
+69,radiant_Pugna
+70,radiant_Queen of Pain
+71,radiant_Razor
+72,radiant_Riki
+73,radiant_Rubick
+74,radiant_Sand King
+75,radiant_Shadow Demon
+76,radiant_Shadow Fiend
+77,radiant_Shadow Shaman
+78,radiant_Silencer
+79,radiant_Skywrath Mage
+80,radiant_Slardar
+81,radiant_Slark
+82,radiant_Sniper
+83,radiant_Spectre
+84,radiant_Spirit Breaker
+85,radiant_Storm Spirit
+86,radiant_Sven
+87,radiant_Techies
+88,radiant_Templar Assassin
+89,radiant_Terrorblade
+90,radiant_Tidehunter
+91,radiant_Timbersaw
+92,radiant_Tinker
+93,radiant_Tiny
+94,radiant_Treant Protector
+95,radiant_Troll Warlord
+96,radiant_Tusk
+97,radiant_Undying
+98,radiant_Ursa
+99,radiant_Vengeful Spirit
+100,radiant_Venomancer
+101,radiant_Viper
+102,radiant_Visage
+103,radiant_Warlock
+104,radiant_Weaver
+105,radiant_Windranger
+106,radiant_Winter Wyvern
+107,radiant_Witch Doctor
+108,radiant_Wraith King
+109,radiant_Zeus
+110,dire_Abaddon
+111,dire_Alchemist
+112,dire_Ancient Apparition
+113,dire_Anti-Mage
+114,dire_Axe
+115,dire_Bane
+116,dire_Batrider
+117,dire_Beastmaster
+118,dire_Bloodseeker
+119,dire_Bounty Hunter
+120,dire_Brewmaster
+121,dire_Bristleback
+122,dire_Broodmother
+123,dire_Centaur Warrunner
+124,dire_Chaos Knight
+125,dire_Chen
+126,dire_Clinkz
+127,dire_Clockwerk
+128,dire_Crystal Maiden
+129,dire_Dark Seer
+130,dire_Dazzle
+131,dire_Death Prophet
+132,dire_Disruptor
+133,dire_Doom
+134,dire_Dragon Knight
+135,dire_Drow Ranger
+136,dire_Earth Spirit
+137,dire_Earthshaker
+138,dire_Elder Titan
+139,dire_Ember Spirit
+140,dire_Enchantress
+141,dire_Enigma
+142,dire_Faceless Void
+143,dire_Gyrocopter
+144,dire_Huskar
+145,dire_Invoker
+146,dire_Io
+147,dire_Jakiro
+148,dire_Juggernaut
+149,dire_Keeper of the Light
+150,dire_Kunkka
+151,dire_Legion Commander
+152,dire_Leshrac
+153,dire_Lich
+154,dire_Lifestealer
+155,dire_Lina
+156,dire_Lion
+157,dire_Lone Druid
+158,dire_Luna
+159,dire_Lycan
+160,dire_Magnus
+161,dire_Medusa
+162,dire_Meepo
+163,dire_Mirana
+164,dire_Morphling
+165,dire_Naga Siren
+166,dire_Nature's Prophet
+167,dire_Necrophos
+168,dire_Night Stalker
+169,dire_Nyx Assassin
+170,dire_Ogre Magi
+171,dire_Omniknight
+172,dire_Oracle
+173,dire_Outworld Devourer
+174,dire_Phantom Assassin
+175,dire_Phantom Lancer
+176,dire_Phoenix
+177,dire_Puck
+178,dire_Pudge
+179,dire_Pugna
+180,dire_Queen of Pain
+181,dire_Razor
+182,dire_Riki
+183,dire_Rubick
+184,dire_Sand King
+185,dire_Shadow Demon
+186,dire_Shadow Fiend
+187,dire_Shadow Shaman
+188,dire_Silencer
+189,dire_Skywrath Mage
+190,dire_Slardar
+191,dire_Slark
+192,dire_Sniper
+193,dire_Spectre
+194,dire_Spirit Breaker
+195,dire_Storm Spirit
+196,dire_Sven
+197,dire_Techies
+198,dire_Templar Assassin
+199,dire_Terrorblade
+200,dire_Tidehunter
+201,dire_Timbersaw
+202,dire_Tinker
+203,dire_Tiny
+204,dire_Treant Protector
+205,dire_Troll Warlord
+206,dire_Tusk
+207,dire_Undying
+208,dire_Ursa
+209,dire_Vengeful Spirit
+210,dire_Venomancer
+211,dire_Viper
+212,dire_Visage
+213,dire_Warlock
+214,dire_Weaver
+215,dire_Windranger
+216,dire_Winter Wyvern
+217,dire_Witch Doctor
+218,dire_Wraith King
+219,dire_Zeus
+220,radiant_Carries
+221,radiant_Supports
+222,radiant_Nukers
+223,radiant_Disablers
+224,radiant_Junglers
+225,radiant_Durable
+226,radiant_Escape
+227,radiant_Pushers
+228,radiant_Initiators
+229,dire_Carries
+230,dire_Supports
+231,dire_Nukers
+232,dire_Disablers
+233,dire_Junglers
+234,dire_Durable
+235,dire_Escape
+236,dire_Pushers
+237,dire_Initiators
+238,radiant_Intelligence
+239,radiant_Health_avg
+240,radiant_Health_reg_avg
+241,radiant_Mana_avg
+242,radiant_Armor_avg
+243,radiant_Att/sec_avg
+244,radiant_Damage_avg
+245,radiant_Magic resistance
+246,radiant_Movement speed
+247,radiant_Attack speed
+248,radiant_Turn rate
+249,radiant_Attack range
+250,dire_Intelligence
+251,dire_Health_avg
+252,dire_Health_reg_avg
+253,dire_Mana_avg
+254,dire_Armor_avg
+255,dire_Att/sec_avg
+256,dire_Damage_avg
+257,dire_Magic resistance
+258,dire_Movement speed
+259,dire_Attack speed
+260,dire_Turn rate
+261,dire_Attack range
