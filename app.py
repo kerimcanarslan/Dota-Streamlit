@@ -2,19 +2,54 @@ import pandas as pd
 import joblib
 import streamlit as st
 import numpy as np
+from PIL import Image
+from streamlit_extras.no_default_selectbox import selectbox
 
 
-col1, col2, col3, col4 = st.columns(4)
 
-with col1:
+from sklearn.base import BaseEstimator, TransformerMixin
+class ColumnSelector(BaseEstimator, TransformerMixin):
+    """Select only specified columns."""
+    def __init__(self, columns):
+        self.columns = columns
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        return X[self.columns]
+
+
+
+
+col1, col2, col3, col4, col5 = st.columns([0.6, 1, 0.6, 1, 0.6], gap="small")
+
+with col2:
     hero=pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/hero_list.csv")
     radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero)
     radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero)
     radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero)
     radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero)
     radiant_5 = st.selectbox("Radiant Takımı 5.Hero Seçimi", hero)
+    
 
-with col3:
+with col1:
+    image_r_1 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{radiant_1}.png')
+    st.image(image_r_1, width=75, use_column_width=True, channels='RGB')
+    
+    image_r_2 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{radiant_2}.png')
+    st.image(image_r_2, width=75, use_column_width=True, channels='RGB')
+    
+    image_r_3 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{radiant_3}.png')
+    st.image(image_r_3, width=75, use_column_width=True, channels='RGB')
+    
+    image_r_4 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{radiant_4}.png')
+    st.image(image_r_4, width=75, use_column_width=True, channels='RGB')
+    
+    image_r_5 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{radiant_5}.png')
+    st.image(image_r_5, width=75, use_column_width=True, channels='RGB')
+
+with col4:
     dire_1 = st.selectbox("Dire Takımı 1.Hero Seçimi", hero)
     dire_2 = st.selectbox("Dire Takımı 2.Hero Seçimi", hero)
     dire_3 = st.selectbox("Dire Takımı 3.Hero Seçimi", hero)
@@ -22,21 +57,25 @@ with col3:
     dire_5 = st.selectbox("Dire Takımı 5.Hero Seçimi", hero)
 
 
-with col2:
-
-    from sklearn.base import BaseEstimator, TransformerMixin
-
-    class ColumnSelector(BaseEstimator, TransformerMixin):
-        """Select only specified columns."""
-        def __init__(self, columns):
-            self.columns = columns
+with col5:
+    image_d_1 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{dire_1}.png')
+    st.image(image_d_1, width=75, use_column_width=True, channels='RGB')
     
-        def fit(self, X, y=None):
-            return self
+    image_d_2 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{dire_2}.png')
+    st.image(image_d_2, width=75, use_column_width=True, channels='RGB')
+    
+    image_d_3 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{dire_3}.png')
+    st.image(image_d_3, width=75, use_column_width=True, channels='RGB')
+    
+    image_d_4 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{dire_4}.png')
+    st.image(image_d_4, width=75, use_column_width=True, channels='RGB')
+    
+    image_d_5 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/dota_2_hero_resim/{dire_5}.png')
+    st.image(image_d_5, width=75, use_column_width=True, channels='RGB')
 
-        def transform(self, X):
-            return X[self.columns]
 
+
+with col3:
 
     def one_hot_encoder(dataframe, categorical_cols, drop_first=False):
         dataframe = pd.get_dummies(dataframe, columns=categorical_cols, drop_first=drop_first)
@@ -76,11 +115,8 @@ with col2:
         'Visage', 'Warlock', 'Weaver', 'Windranger', 'Winter Wyvern',
         'Witch Doctor', 'Wraith King', 'Zeus']
    
-    h_roles_oyun_oncesi = ['Carries', 'Supports', 'Nukers', 'Disablers', 'Junglers', 'Durable', 'Escape', 'Pushers',
-     'Initiators']
-    h_specs_oyun_oncesi = ['Strength', 'Agility', 'Intelligence', 'Health_avg', 'Health_reg_avg', 'Mana_avg',
-        'Mana_reg_avg', 'Armor_avg', 'Att/sec_avg', 'Damage_avg', 'Magic resistance',
-        'Movement speed', 'Attack speed', 'Turn rate', 'Attack range', 'Damage block']
+    h_roles_oyun_oncesi = ['Carries', 'Supports', 'Nukers', 'Disablers', 'Junglers', 'Durable', 'Escape', 'Pushers','Initiators']
+    h_specs_oyun_oncesi = ['Strength', 'Agility', 'Intelligence', 'Health_avg', 'Health_reg_avg', 'Mana_avg', 'Mana_reg_avg', 'Armor_avg', 'Att/sec_avg', 'Damage_avg', 'Magic resistance', 'Movement speed', 'Attack speed', 'Turn rate', 'Attack range', 'Damage block']
 
     radiant_cols_oyun_oncesi = ['radiant_Abaddon',
      'radiant_Alchemist',
@@ -368,12 +404,12 @@ with col2:
         dire_roles_list = []
         radiant_specs = []
         dire_specs = []
-        all_heroes=[]
+        all_heroes= []
 
         all_heroes.extend(heroes_radiant)
         all_heroes.extend(heroes_dire)
 
-        new_hero_df = pd.DataFrame(all_heroes, columns= ["hero"])
+        new_hero_df = pd.DataFrame(all_heroes, columns = ["hero"])
         new_hero_df = pd.merge(new_hero_df, df, on ='hero', how ='left')
 
         for col in data_hero_roles.columns:
@@ -414,29 +450,41 @@ with col2:
     heroes_dire=[dire_1, dire_2, dire_3, dire_4, dire_5]
 
     sample_ = prepare_dataframe(heroes_radiant, heroes_dire, feature_to_use_)
-    win_probility = model.predict_proba(sample_)[:, 1]
+    win_probility = model.predict_proba(sample_)[:, 1] * 100
     win_ = model.predict(sample_)
-
-    st.markdown(f"Radiant Kazanma Durumu: **{win_}**")
-    st.markdown(f"Radiant Kazanma Olasılığı: **{win_probility[0]}**")
-
-
-with col4:
-    wlb_df = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/wlb_df_.csv")
+    win_probility = win_probility.round(2)
     
-    def recommend_dota_heroes(win_loss_rates_wlb = [], hero_to_counter=[], enemy_team=[], our_team=[], number_of_recommendations = 5):
-        if hero_to_counter not in wlb_df.columns:
-            print("You entered wrong hero name")
-        recommend = win_loss_rates_wlb.loc[hero_to_counter, :].dropna()
-        all_hero = enemy_team
-        all_hero.extend(our_team)
-        return recommend[set(recommend.index).difference(set(all_hero))].sort_values()[:number_of_recommendations]
+    if win_==1:
+        st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
+        st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
+    else:
+        st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
+        st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="maroon"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
+    
+wlb_df = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme Projesi/wlb_hero_final.csv")
+
+wlb_df = wlb_df.set_index('index')
+wlb_df = wlb_df.iloc[:,1:]
+def recommend_dota_heroes(win_loss_rates_wlb=[], hero_to_counter=[], enemy_team=[], our_team=[],
+                          number_of_recommendations=5):
+    if hero_to_counter not in wlb_df.columns:
+        print("You entered wrong hero name")
+    recommend = win_loss_rates_wlb.loc[hero_to_counter, :].dropna()
+    all_hero = enemy_team
+    all_hero.extend(our_team)
+    return recommend[set(recommend.index).difference(set(all_hero))].sort_values()[:number_of_recommendations]
+
+
+abc = st.selectbox("Hero Seçiniz", hero)
+hero_recommender = recommend_dota_heroes(wlb_df, abc, heroes_dire, heroes_radiant, 10)
+st.dataframe(hero_recommender)
         
-        
-    hero_recommender = recommend_dota_heroes(wlb_df, "Dragon Knight", heroes_dire, [], 10)
-    hero_recommender = st.checkbox("Tahmini Gör")
     
-    
-    
-    
-    
+
+
+
+
+
+
+
+
