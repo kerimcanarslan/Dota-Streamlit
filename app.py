@@ -95,11 +95,15 @@ def Dota():
         
         with col2:
             hero=pd.read_csv("hero_list.csv")
-            radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero)
+            radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero[6])
             radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero)
             radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero)
             radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero)
             radiant_5 = st.selectbox("Radiant Takımı 5.Hero Seçimi", hero)
+            
+            values = ['<select>',3, 5, 10, 15, 20, 30]
+            default_ix = values.index(30)
+            window_ANTICOR = st.sidebar.selectbox('Window ANTICOR', values, index=default_ix)
             
 
         with col1:
@@ -544,7 +548,7 @@ def Dota():
             return recommend[set(recommend.index).difference(set(all_hero))].sort_values()[:number_of_recommendations]
 
         
-        st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
+        st.markdown(f'<h1 <p><font face="tahoma" size="20" color="maroon"><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
         
         abc = st.selectbox("Hero Seçiniz", hero)
         hero_recommender = recommend_dota_heroes(wlb_df, abc, heroes_dire, heroes_radiant, 10)
