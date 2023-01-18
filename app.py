@@ -543,7 +543,9 @@ def Dota():
             all_hero.extend(our_team)
             return recommend[set(recommend.index).difference(set(all_hero))].sort_values()[:number_of_recommendations]
 
-
+        
+        st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
+        
         abc = st.selectbox("Hero Seçiniz", hero)
         hero_recommender = recommend_dota_heroes(wlb_df, abc, heroes_dire, heroes_radiant, 10)
         st.dataframe(hero_recommender)
