@@ -99,10 +99,10 @@ def Dota():
             
 
             radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero, index=5)
-            radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero)
-            radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero)
-            radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero)
-            radiant_5 = st.selectbox("Radiant Takımı 5.Hero Seçimi", hero)
+            radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero, index=9)
+            radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero, index=12)
+            radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero, index=16)
+            radiant_5 = st.selectbox("Radiant Takımı 5.Hero Seçimi", hero, index=57)
             
        
         with col1:
