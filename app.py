@@ -527,7 +527,7 @@ def Dota():
                 st.success(f'Radiant Win: {win_}')
                 st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             else:
-                st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
+                st.error(f'Radiant Win: {win_}')
                 st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="maroon"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             
         wlb_df = pd.read_csv("wlb_hero_final.csv")
