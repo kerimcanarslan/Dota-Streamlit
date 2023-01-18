@@ -520,11 +520,11 @@ def Dota():
 
             sample_ = prepare_dataframe(heroes_radiant, heroes_dire, feature_to_use_)
             win_probility = model.predict_proba(sample_)[:, 1] * 100
-            win_ = model.predict(sample_)
+            win_ = model.predict(sample_)[0]
             win_probility = win_probility.round(2)[0]
             
             if win_==1:
-                st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
+                st.markdown(f'<h1 <p><font face="tahoma" size="3" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
                 st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             else:
                 st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
