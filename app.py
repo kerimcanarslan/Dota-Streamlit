@@ -13,7 +13,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
-dota_image = Image.open("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
+dota_image = Image.open("Dota-Streamlit/kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
 
 st.set_page_config(
     page_title="Dota 2 Win Simulation",
