@@ -13,7 +13,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
-dota_image = Image.open("Dota-Streamlit/kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
+dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
 
 st.set_page_config(
     page_title="Dota 2 Win Simulation",
@@ -53,19 +53,19 @@ def Dota():
             st.image(dota_image, width=360, use_column_width=False, channels='RGB')
             
          with clm2:
-            gorkem = Image.open("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/Görkem Aksoy.png")
+            gorkem = Image.open("Görkem Aksoy.png")
             st.image(gorkem, width=62, use_column_width=False, channels='RGB')
             
-            hakan = Image.open("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/Hakan Yücetürk.png")
+            hakan = Image.open("Hakan Yücetürk.png")
             st.image(hakan, width=62, use_column_width=False, channels='RGB')
             
-            mustafa = Image.open("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/m_germec_photo.png")
+            mustafa = Image.open("m_germec_photo.png")
             st.image(mustafa, width=64, use_column_width=False, channels='RGB')
             
-            kerim = Image.open("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/Kerimcan Arslan.png")
+            kerim = Image.open("Kerimcan Arslan.png")
             st.image(kerim, width=66, use_column_width=False, channels='RGB')
             
-            berkay = Image.open("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/Berkay Basak.png")
+            berkay = Image.open("Berkay Basak.png")
             st.image(berkay, width=66, use_column_width=False, channels='RGB')
             
          with clm3:
@@ -94,7 +94,7 @@ def Dota():
         col1, col2, col3, col4, col5 = st.columns([0.6, 1, 0.6, 1, 0.6], gap="small")
         
         with col2:
-            hero=pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/hero_list.csv")
+            hero=pd.read_csv("hero_list.csv")
             radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero)
             radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero)
             radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero)
@@ -103,19 +103,19 @@ def Dota():
             
 
         with col1:
-            image_r_1 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{radiant_1}.png')
+            image_r_1 = Image.open(f'dota_2_hero_resim/{radiant_1}.png')
             st.image(image_r_1, width=75, use_column_width=True, channels='RGB')
             
-            image_r_2 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{radiant_2}.png')
+            image_r_2 = Image.open(f'dota_2_hero_resim/{radiant_2}.png')
             st.image(image_r_2, width=75, use_column_width=True, channels='RGB')
             
-            image_r_3 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{radiant_3}.png')
+            image_r_3 = Image.open(f'dota_2_hero_resim/{radiant_3}.png')
             st.image(image_r_3, width=75, use_column_width=True, channels='RGB')
             
-            image_r_4 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{radiant_4}.png')
+            image_r_4 = Image.open(f'dota_2_hero_resim/{radiant_4}.png')
             st.image(image_r_4, width=75, use_column_width=True, channels='RGB')
             
-            image_r_5 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{radiant_5}.png')
+            image_r_5 = Image.open(f'dota_2_hero_resim/{radiant_5}.png')
             st.image(image_r_5, width=75, use_column_width=True, channels='RGB')
 
         with col4:
@@ -127,19 +127,19 @@ def Dota():
 
 
         with col5:
-            image_d_1 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{dire_1}.png')
+            image_d_1 = Image.open(f'dota_2_hero_resim/{dire_1}.png')
             st.image(image_d_1, width=75, use_column_width=True, channels='RGB')
             
-            image_d_2 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{dire_2}.png')
+            image_d_2 = Image.open(f'dota_2_hero_resim/{dire_2}.png')
             st.image(image_d_2, width=75, use_column_width=True, channels='RGB')
             
-            image_d_3 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{dire_3}.png')
+            image_d_3 = Image.open(f'dota_2_hero_resim/{dire_3}.png')
             st.image(image_d_3, width=75, use_column_width=True, channels='RGB')
             
-            image_d_4 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{dire_4}.png')
+            image_d_4 = Image.open(f'dota_2_hero_resim/{dire_4}.png')
             st.image(image_d_4, width=75, use_column_width=True, channels='RGB')
             
-            image_d_5 = Image.open(f'/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_2_hero_resim/{dire_5}.png')
+            image_d_5 = Image.open(f'dota_2_hero_resim/{dire_5}.png')
             st.image(image_d_5, width=75, use_column_width=True, channels='RGB')
 
 
@@ -151,13 +151,13 @@ def Dota():
                 return dataframe
             
 
-            data_hero_roles = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/data_hero_roles.csv")
+            data_hero_roles = pd.read_csv("data_hero_roles.csv")
 
-            feature_to_use_ = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/Oyun_Oncesi_Feature_Names.csv")
+            feature_to_use_ = pd.read_csv("Oyun_Oncesi_Feature_Names.csv")
 
-            df = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/df.csv")
+            df = pd.read_csv("df.csv")
 
-            model = joblib.load("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_oyun_oncesi.pkl")
+            model = joblib.load("dota_oyun_oncesi.pkl")
 
             player_heroes_oyun_oncesi = ['Abaddon', 'Alchemist', 'Ancient Apparition', 'Anti-Mage', 'Axe',
                 'Bane', 'Batrider', 'Beastmaster', 'Bloodseeker', 'Bounty Hunter',
@@ -530,7 +530,7 @@ def Dota():
                 st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
                 st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="maroon"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             
-        wlb_df = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/wlb_hero_final.csv")
+        wlb_df = pd.read_csv("wlb_hero_final.csv")
 
         wlb_df = wlb_df.set_index('index')
         wlb_df = wlb_df.iloc[:,1:]
@@ -557,7 +557,7 @@ def Prediction():
     if sayfa == "İtem Tavsiye Sistemi":
         
         
-        rec_list = pd.read_csv("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/tavsiyeler.csv")
+        rec_list = pd.read_csv("tavsiyeler.csv")
         rec_list.drop("Unnamed: 0", axis=1, inplace=True)
         rec_list.index = rec_list["Item_Names"]
         rec_list.drop("Item_Names", axis=1, inplace=True)
@@ -589,8 +589,7 @@ def Prediction():
                 st.write(elem)
                 
     else:
-        oyun_ici_feature_engineering_data = pd.read_csv(
-          "/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/oyun_ici_feature_engineering_data.csv")
+        oyun_ici_feature_engineering_data = pd.read_csv("oyun_ici_feature_engineering_data.csv")
         num_cols = ['dire_gold_per_min',
                     'dire_hero_healing',
                     'dire_kills_div_dire_total_damage',
@@ -617,7 +616,7 @@ def Prediction():
                     'radiant_unit_order_move_to_target',
                     'radiant_xp_per_min']
                     
-        pipe_from_joblib_oyun_ici = joblib.load('/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_oyun_ici (1).pkl')
+        pipe_from_joblib_oyun_ici = joblib.load('dota_oyun_ici (1).pkl')
         
         df_ici = oyun_ici_feature_engineering_data.copy()
         
@@ -708,7 +707,7 @@ def NLP():
             data = pd.read_csv(text)
             return data
 
-        df = load_data('/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_w.csv')
+        df = load_data('dota_w.csv')
 
         st.sidebar.subheader('Show random chats')
         random_chat = st.sidebar.radio('**Sentiment**', ('Positive', 'Negative'))
@@ -735,7 +734,7 @@ def NLP():
             data = pd.read_csv(text)
             return data
 
-        df = load_data('/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_w.csv')
+        df = load_data('dota_w.csv')
 
         # WORD CLOUD FOR POSITIVE AND NEGATIVE MEANING CHATS
         word_sentiment = st.sidebar.radio('Display word cloud for what sentiment?',
@@ -761,7 +760,7 @@ def NLP():
             return data
 
 
-        df_new = load_data('/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/dota_ml.csv')
+        df_new = load_data('dota_ml.csv')
 
         # dataframe
         def preparation_for_modeling(dataframe):
@@ -777,7 +776,7 @@ def NLP():
         X_train, y_train, X_count, X_tf_idf_word = preparation_for_modeling(df_new)
 
         # Load the model
-        model_count = joblib.load("/Users/kerimcanarslan/PycharmProjects/pythonProject/PycharmProjects/Bitirme_Projesi/voting_clf_count_1.pkl")
+        model_count = joblib.load("voting_clf_count_1.pkl")
 
 
         def predict(inputs):
