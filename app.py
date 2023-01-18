@@ -96,12 +96,14 @@ def Dota():
         with col2:
             
             hero=pd.read_csv("hero_list.csv")
-            values = ['<select>', "Drow Ranger"]
-            default_ix = values.index(3)
+            values = ['<select>', "Drow Ranger", "Morphling", "Puck", "Storm Spirit", "Huskar", "Anti-Mage", "Axe", "Bane", "Bloodseeker", "Crystal Maiden"]
+            default_ix_1 = values.index(5)
+            default_ix_2 = values.index(9)
+           
             
             
-            radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero, index=default_ix)
-            radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero)
+            radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero, index=default_ix1)
+            radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero, index=default_ix_2)
             radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero)
             radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero)
             radiant_5 = st.selectbox("Radiant Takımı 5.Hero Seçimi", hero)
