@@ -122,11 +122,11 @@ def Dota():
             st.image(image_r_5, width=75, use_column_width=True, channels='RGB')
 
         with col4:
-            dire_1 = st.selectbox("Dire Takımı 1.Hero Seçimi", hero)
-            dire_2 = st.selectbox("Dire Takımı 2.Hero Seçimi", hero)
-            dire_3 = st.selectbox("Dire Takımı 3.Hero Seçimi", hero)
-            dire_4 = st.selectbox("Dire Takımı 4.Hero Seçimi", hero)
-            dire_5 = st.selectbox("Dire Takımı 5.Hero Seçimi", hero)
+            dire_1 = st.selectbox("Dire Takımı 1.Hero Seçimi", hero, index=0)
+            dire_2 = st.selectbox("Dire Takımı 2.Hero Seçimi", hero, index=1)
+            dire_3 = st.selectbox("Dire Takımı 3.Hero Seçimi", hero, index=2)
+            dire_4 = st.selectbox("Dire Takımı 4.Hero Seçimi", hero, index=3)
+            dire_5 = st.selectbox("Dire Takımı 5.Hero Seçimi", hero, index=4)
 
 
         with col5:
