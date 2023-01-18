@@ -53,19 +53,19 @@ def Dota():
             st.image(dota_image, width=360, use_column_width=False, channels='RGB')
             
          with clm2:
-            gorkem = Image.open("Görkem Aksoy.png")
+            gorkem = Image.open("Gorkem_Aksoy.png")
             st.image(gorkem, width=62, use_column_width=False, channels='RGB')
             
-            hakan = Image.open("Hakan Yücetürk.png")
+            hakan = Image.open("Hakan_Yuceturk.png")
             st.image(hakan, width=62, use_column_width=False, channels='RGB')
             
             mustafa = Image.open("m_germec_photo.png")
             st.image(mustafa, width=64, use_column_width=False, channels='RGB')
             
-            kerim = Image.open("Kerimcan Arslan.png")
+            kerim = Image.open("Kerimcan_Arslan.png")
             st.image(kerim, width=66, use_column_width=False, channels='RGB')
             
-            berkay = Image.open("Berkay Basak.png")
+            berkay = Image.open("Berkay_Basak.png")
             st.image(berkay, width=66, use_column_width=False, channels='RGB')
             
          with clm3:
