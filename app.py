@@ -524,7 +524,7 @@ def Dota():
             win_probility = win_probility.round(2)[0]
             
             if win_==1:
-                st.markdown(f'<h1 <p><font face="tahoma" size="3" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
+                st.success(f'{win_}')
                 st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             else:
                 st.markdown(f'<h1 <p><font face="tahoma" size="1.9" color="white"><b>Radiant Win: {win_}</b></font></p> </h1>', unsafe_allow_html=True)
