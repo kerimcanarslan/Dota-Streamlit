@@ -97,7 +97,7 @@ def Dota():
             
             hero=pd.read_csv("hero_list.csv")
             values = ['<select>', "Drow Ranger"]
-            default_ix = values.index(hero)
+            default_ix = values.index("Drow Ranger")
             
             
             radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero, index=default_ix)
@@ -106,11 +106,7 @@ def Dota():
             radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero)
             radiant_5 = st.selectbox("Radiant Takımı 5.Hero Seçimi", hero)
             
-            values = ['<select>',3, 5, 10, 15, 20, 30]
-            default_ix = values.index(30)
-            window_ANTICOR = st.sidebar.selectbox('Window ANTICOR', values, index=default_ix)
-            
-
+       
         with col1:
             image_r_1 = Image.open(f'dota_2_hero_resim/{radiant_1}.png')
             st.image(image_r_1, width=75, use_column_width=True, channels='RGB')
