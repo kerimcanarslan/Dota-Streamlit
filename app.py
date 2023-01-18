@@ -95,7 +95,7 @@ def Dota():
         
         with col2:
             hero=pd.read_csv("hero_list.csv")
-            radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero[6])
+            radiant_1 = st.selectbox("Radiant Takımı 1.Hero Seçimi", hero["Drow Ranger"])
             radiant_2 = st.selectbox("Radiant Takımı 2.Hero Seçimi", hero)
             radiant_3 = st.selectbox("Radiant Takımı 3.Hero Seçimi", hero)
             radiant_4 = st.selectbox("Radiant Takımı 4.Hero Seçimi", hero)
