@@ -21,8 +21,6 @@ dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-
 st.set_page_config(
     page_title="Dota 2 Win Simulation",
     page_icon=dota_image,
-    layout="wide",
-    initial_sidebar_state="expanded",
 )
 
 def get_base64(bin_file):
