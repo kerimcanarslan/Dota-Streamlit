@@ -34,7 +34,7 @@ def set_background(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
 
-set_background('dota-2-logo-dota-gamecrew-wallpaper-preview.jpg')
+set_background('background.png')
 
 dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
 
