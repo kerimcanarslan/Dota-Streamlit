@@ -559,7 +559,7 @@ def Dota():
                 st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="lime"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             else:
                 st.error(f'Radiant Win: {win_}')
-                st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="maroon"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
+                st.markdown(f'<h1 <p><font face="tahoma" size="4.5" color="crimson"><b>Probability of Win: %{win_probility}</b></font></p> </h1>', unsafe_allow_html=True)
             
         wlb_df = pd.read_csv("wlb_hero_final.csv")
 
@@ -575,7 +575,7 @@ def Dota():
             return recommend[set(recommend.index).difference(set(all_hero))].sort_values()[:number_of_recommendations]
 
         
-        st.markdown(f'<h1 <p><font face="tahoma" size="25" color="crimson "><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
+        st.markdown(f'<h1 <p><font face="tahoma" size="25" color="maroon "><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
         
         abc = st.selectbox("Hero Seçiniz", hero)
         hero_recommender = recommend_dota_heroes(wlb_df, abc, heroes_dire, heroes_radiant, 10)
