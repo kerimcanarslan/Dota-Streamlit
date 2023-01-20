@@ -826,7 +826,7 @@ def NLP():
         if prediction_count == 1:
             st.write("Prediction: ", 'CONGRATULATIONS! I THINK YOU WON!')
             st.markdown(f'<h1 <p><font face="tahoma" size="5" color="lime "><b>Oyuncu maç esnasında negatif ve argo kelime kullanmadığı için maçı kazanıyor olabilir</b></font></p> </h1>', unsafe_allow_html=True)
-        else:
+        elif prediction_count == 0:
             st.write("Prediction: ", 'PLEASE DO NOT USE SLANG WORDS!')
             st.markdown(f'<h1 <p><font face="tahoma" size="5" color="crimson "><b>Oyuncu maç esnasında negatif ve argo kelime kullandığı için maçı kaybediyor olabilir</b></font></p> </h1>', unsafe_allow_html=True)
             
