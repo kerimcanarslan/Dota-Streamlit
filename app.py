@@ -39,10 +39,7 @@ dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-
 
 st.set_page_config(
     page_title="Dota 2 Win Simulation",
-    page_icon=dota_image,
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
+    page_icon=dota_image)
 
 from sklearn.base import BaseEstimator, TransformerMixin
 class ColumnSelector(BaseEstimator, TransformerMixin):
