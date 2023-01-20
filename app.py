@@ -13,20 +13,32 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
-st.markdown("""
-    <style>
-        .stApp {
-        background: url("dota-2-logo-backgrounds-neon-wallpaper-preview.jpg");
-        background-size: cover;
-        }
-    </style>""", unsafe_allow_html=True)
+import base64
 
+def get_base64(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+
+def set_background(png_file):
+    bin_str = get_base64(png_file)
+    page_bg_img = '''
+    <style>
+    .stApp {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
+    }
+    </style>
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    
+
+set_background('dota-2-logo-backgrounds-neon-wallpaper-preview.jpg')
 
 dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
 
-st.set_page_config(
-    page_title="Dota 2 Win Simulation",
-    page_icon=dota_image)
+
 
 from sklearn.base import BaseEstimator, TransformerMixin
 class ColumnSelector(BaseEstimator, TransformerMixin):
