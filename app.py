@@ -825,6 +825,7 @@ def NLP():
         prediction_count = predict(inputs)
         if prediction_count == 1:
             st.write("Prediction: ", 'CONGRATULATIONS! I THINK YOU WON!')
+            st.title("Warning: Kullanıcı Pozitif cümle kurduğu için maçı kazanmış olabileceğini düşünüyoruz")
         else:
             st.write("Prediction: ", 'PLEASE DO NOT USE SLANG WORDS!')
 
