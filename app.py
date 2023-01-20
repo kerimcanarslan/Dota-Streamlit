@@ -828,7 +828,7 @@ def NLP():
             st.write("Prediction: ", 'Oyuncu maç esnasında negatif ve argo kelime kullanmadığı için maçı kazanıyor olabilir')
         else:
             st.write("Prediction: ", 'PLEASE DO NOT USE SLANG WORDS!')
-            st.write(error, "Prediction: ", 'Oyuncu maç esnasında negatif ve argo kelime kullandığı için maçı kaybediyor olabilir')
+            st.markdown(f'<h1 <p><font face="tahoma" size="4" color="maroon "><b>Oyuncu maç esnasında negatif ve argo kelime kullandığı için maçı kaybediyor olabilir</b></font></p> </h1>', unsafe_allow_html=True)
             
             
 
