@@ -15,6 +15,16 @@ from sklearn.model_selection import train_test_split
 
 import base64
 
+
+dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
+
+st.set_page_config(
+    page_title="Dota 2 Win Simulation",
+    page_icon=dota_image,
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 def get_base64(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
@@ -36,7 +46,7 @@ def set_background(png_file):
 
 set_background('background.png')
 
-dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
+
 
 
 
