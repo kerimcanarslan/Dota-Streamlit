@@ -828,7 +828,8 @@ def NLP():
             st.write("Prediction: ", 'Oyuncu maç esnasında negatif ve argo kelime kullanmadığı için maçı kazanıyor olabilir')
         else:
             st.write("Prediction: ", 'PLEASE DO NOT USE SLANG WORDS!')
-            st.write("Prediction: ", 'Oyuncu maç esnasında negatif ve argo kelime kullandığı için maçı kaybediyor olabilir')
+            st.write(error, "Prediction: ", 'Oyuncu maç esnasında negatif ve argo kelime kullandığı için maçı kaybediyor olabilir')
+            
             
 
 
