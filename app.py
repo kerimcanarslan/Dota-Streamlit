@@ -21,6 +21,8 @@ dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-
 st.set_page_config(
     page_title="Dota 2 Win Simulation",
     page_icon=dota_image,
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
 
 def get_base64(bin_file):
@@ -573,7 +575,7 @@ def Dota():
             return recommend[set(recommend.index).difference(set(all_hero))].sort_values()[:number_of_recommendations]
 
         
-        st.markdown(f'<h1 <p><font face="tahoma" size="20" color="maroon"><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
+        st.markdown(f'<h1 <p><font face="tahoma" size="25" color="crimson "><b>Hero Seçim Tavsiyesi</b></font></p> </h1>', unsafe_allow_html=True)
         
         abc = st.selectbox("Hero Seçiniz", hero)
         hero_recommender = recommend_dota_heroes(wlb_df, abc, heroes_dire, heroes_radiant, 10)
