@@ -13,6 +13,13 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.model_selection import train_test_split
 
+st.markdown("""
+    <style>
+        .stApp {
+        background: url("dota-2-logo-backgrounds-neon-wallpaper-preview.jpg");
+        background-size: cover;
+        }
+    </style>""", unsafe_allow_html=True)
 
 
 dota_image = Image.open("kisspng-dota-2-counter-strike-global-offensive-defense-of-5afd3c9e8ce7c6.9674077815265455665772.png")
