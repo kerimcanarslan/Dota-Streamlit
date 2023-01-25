@@ -845,9 +845,3 @@ demo_name = st.sidebar.selectbox("Choose a section", page_names_to_funcs.keys())
 page_names_to_funcs[demo_name]()
 
 
-
-
-
-
-
-
