@@ -834,7 +834,6 @@ def NLP():
 
 
 
-
 page_names_to_funcs = {
     "Dota": Dota,
     "Real Time Prediction": Prediction,
